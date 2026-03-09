@@ -52,7 +52,7 @@ Agent Skill Security Evaluatorは、第三者が開発・公開したAgent Skill
 ## インストール
 
 ```bash
-claude plugin add --from <リポジトリURL>
+claude plugin add --from https://github.com/naoki-sakamoto/agent-skill-security-evaluator.git
 ```
 
 ## ディレクトリ構成
