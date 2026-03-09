@@ -1,6 +1,7 @@
 {
-  "$schema": "https://github.com/naoki-sakamoto/schemas/marketplace.json",
-  "name": "naoki.sakamoto",
+  "schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "agent-skill-security-evaluator",
+  "description": "サードパーティのAgent Skillを8つのセキュリティドメインで評価し、詳細な脆弱性レポートを生成するプラグイン",
   "owner": {
     "name": "naoki.sakamoto",
     "url": "https://x.com/jar2"
@@ -8,8 +9,14 @@
   "plugins": [
     {
       "name": "agent-skill-security-evaluator",
+      "description": "サードパーティのAgent Skillを8つのセキュリティドメイン（配布元の信頼性、コード安全性、サプライチェーン、プロンプトインジェクション、データ・プライバシー、権限管理、運用保守性、エージェント固有の脅威）で評価します。10段階スコアリング、自動不合格条件、改善勧告を含む詳細な脆弱性レポートを生成します。",
+      "version": "1.0.0",
+      "author": {
+        "name": "naoki.sakamoto",
+        "url": "https://x.com/jar2"
+      },
       "source": "./",
-      "description": "サードパーティのAgent Skillを8つのセキュリティドメイン（配布元の信頼性、コード安全性、サプライチェーン、プロンプトインジェクション、データ・プライバシー、権限管理、運用保守性、エージェント固有の脅威）で評価します。10段階スコアリング、自動不合格条件、改善勧告を含む詳細な脆弱性レポートを生成します。"
+      "category": "security"
     }
   ]
 }

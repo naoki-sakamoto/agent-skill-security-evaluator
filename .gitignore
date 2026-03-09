@@ -2,3 +2,10 @@
 __pycache__/
 .idea/
 .vscode/
+*.swp
+*.swo
+*~
+node_modules/
+.env
+.env.local
+.claude/settings.local.json
