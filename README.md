@@ -51,9 +51,47 @@ Agent Skill Security Evaluatorは、第三者が開発・公開したAgent Skill
 
 ## インストール
 
-```bash
-claude plugin add --from https://github.com/naoki-sakamoto/agent-skill-security-evaluator.git
+### Claude Code（CLI）
+
+Claude Codeのセッション内で以下のコマンドを実行してください。
+
+#### 1. マーケットプレイスの追加
+
+```shell
+/plugin marketplace add naoki-sakamoto/agent-skill-security-evaluator
 ```
+
+#### 2. プラグインのインストール
+
+```shell
+/plugin install agent-skill-security-evaluator@naoki-sakamoto-agent-skill-security-evaluator
+```
+
+または、`/plugin` コマンドで **Discover** タブを開き、一覧からインストールすることもできます。
+
+#### 3. プラグインの反映
+
+インストール後、スキルが認識されない場合は以下を実行してください。
+
+```shell
+/reload-plugins
+```
+
+### Claude アプリ（デスクトップ / Web）
+
+Claude アプリ（claude.ai / デスクトップアプリ）からインストールする場合：
+
+1. **Settings（設定）** を開く
+2. 左メニューから **「Integrations」** を選択
+3. **「Add Integration」** をクリック
+4. 検索欄で **「agent-skill-security-evaluator」** を検索、またはリポジトリURLを入力：
+   ```
+   https://github.com/naoki-sakamoto/agent-skill-security-evaluator
+   ```
+5. 表示されたプラグインを選択し、**「Install」** をクリック
+6. 権限の確認ダイアログで許可するツール（WebFetch, WebSearch, Read, Glob）を確認し、**「Allow」** をクリック
+
+インストール完了後、チャットで「スキルを評価して」等と入力するとスキルが起動します。
 
 ## ディレクトリ構成
 
